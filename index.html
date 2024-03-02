@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>La Bella Pizza</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <!-- <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div> -->
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn-square border rounded-circle nav-fill"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="text-primary display-4">La Bella Pizza</h1>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="#inicio" class="nav-item nav-link active">Inicio</a>
+                                <a href="#mas-vendidas" class="nav-item nav-link">Ofertas</a>
+                                <a href="#productos" class="nav-item nav-link">Menú</a>
+                                <a href="#preguntas-frecuentes" class="nav-item nav-link">Preguntas frecuentes </a>
+                                <a href="#contactanos" class="nav-item nav-link">Contactanos</a>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                <!-- icono carrito -->
+                                <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa-solid fa-cart-shopping"></i></button>
+                                <a href="contact.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Haz Tu Pedido
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel"></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <section id="inicio">
+        <!-- Carousel Start -->
+        <div class="container-fluid carousel-header px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="img/portada-1.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3">Pizzas Deliciosas</h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">La Bella Pizza </h1>
+                                <p class="mx-md-5 fs-4 px-4 mb-5 text-dark"></p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/portada-2.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Pizzas Deliciosas</h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">La Bella Pizza </h1>
+                                <p class="mx-md-5 fs-4 px-5 mb-5 text-dark"></p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/portada-3.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Pizzas Deliciosas</h4>
+                                <h1 class="display-1 text-capitalize text-dark">La Bella Pizza </h1>
+                                <p class="mx-md-5 fs-4 px-5 mb-5 text-dark"></p>
+                                <div class="d-flex align-items-center justify-content-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <section id="productos">
+        <!-- Services Start -->
+        <div class="container-fluid services py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-center text-primary"></p>
+                    <h1 class="display-3">Menú</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Pizza de pepperoni </h3>
+                                        <p> pepperoni,
+                                            salami,
+                                            queso mozzarella rallado,
+                                            tomate triturado,
+                                            queso parmesano rallado.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Agrega al carrito</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/pizza-1.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/pizza-2.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Pizza de tomate y albahaca </h3>
+                                        <p>tomates cherry, mozzarella.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Agrega al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Pizza de aceitunas</h3>
+                                        <p>queso mozzarella, tomates, aceitnas negras, oregano, albahaca.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Agrega al carrito</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/pizza-3.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/pizza-4.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Pizza hawaiana</h3>
+                                        <p>mozzarella, piña, jamón.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Agrega al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Pizza de berenjena</h3>
+                                        <p>mozzarella, perejil,berenjena,aceitunas verdes.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Agrega al carrito</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/pizza-5.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/pizza-6.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Pizza cuatro quesos</h3>
+                                        <p>queso mozzarella, queso azul, queso blando, queso duro.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Agrega al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>pizza marinara</h3>
+                                        <p>salsa de romate, oregano</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Agrega al carrito</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/pizza-marinara.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/pizza-italiana.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Pizza italiana</h3>
+                                        <p>tomate, queso mozzarella, albahaca fresca, aceite de oliva virgen extra</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Agrega al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="services-btn text-center">
+                            <a href="#" download="menu.pdf" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Descarga Menú</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <section id="preguntas-frecuentes"></section>
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="video">
+                            
+                            <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;;">
+                                <img src="img/mejores pizzas italia.jpg" class="img-fluid rounded" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="fs-4 text-uppercase text-primary"></p>
+                        <h1 class="display-4 mb-4">Preguntas Frecuentes</h1>
+                        <h4>¿Tienen opciones veganas / vegetarianas?</h4>
+                        <p class="mb-4">Claro que sí, en nuestro menú encuentras opciones veganas/vegetarianas.
+                        </p>
+                        <h4>¿Son pet Friendly?</h4>
+                        <p class="mb-4">Lamentamos informarte que no tenemos terraza para nuestras mascotas
+                        </p>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="col-lg-7">
+                                       
+                                                    
+                                    
+                                    
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+    
+        </section>
+
+        <section id="contactanos">
+        <!-- Appointment Start -->
+        <div class="container-fluid appointment py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="appointment-form p-5">
+                            <p class="fs-4 text-uppercase text-primary">Pongase En Contacto</p>
+                            <h1 class="display-4 mb-4 text-white">Pide Tu Orden</h1>
+                            <form>
+                                <div class="row gy-3 gx-4">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control py-3 border-white bg-transparent text-white" placeholder="First Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="date" class="form-control py-3 border-white bg-transparent">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button type="button" class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">Pida ahora</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="appointment-time p-5">
+                            <h1 class="display-5 mb-4">Horarios de atención</h1>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p> Lunes:</p>
+                                <p>09:00 am – 10:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Martes:</p>
+                                <p>09:00 am – 10:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Miercoles:</p>
+                                <p>09:00 am – 10:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Jueves:</p>
+                                <p>09:00 am – 10:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Viernes:</p>
+                                <p>09:00 am – 08:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white mb-4">
+                                <p>Sabado</p>
+                                <p>09:00 am – 05:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white mb-4">
+                                <p>Domingo:</p>
+                                <p>Cerrado</p>
+                            </div>
+                            <p class="text-dark">Consulte los descuentos de temporada para obtener las mejores ofertas...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+                 
+        </div>
+        <!-- Appointment End -->
+
+
+        <section id="mas-vendidas"> 
+        <!-- Pricing Start -->
+       <center> <h1 class="display-3">Más Vendidas</h1></center>
+        <div class="container-fluid pricing py-5">
+            <div class="container py-5">
+                <div class="owl-carousel pricing-carousel">
+                    <div class="pricing-item">
+                        <div class="rounded pricing-content">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>20k<small class="text-muted" style="font-size: 16px; line-height: 40px;"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">pizza marinara</h5>
+                            </div>
+                            <div class="p-4">
+                                <img src="img/pizza-marinara.jpg" class="img-fluid rounded" alt="">
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Ordenar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>15k<small class="text-muted" style="font-size: 16px; line-height: 40px;"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Pizza itliana </h5>
+                            </div>
+                            <div class="p-4">
+                                <img src="img/pizza-italiana.jpg" class="img-fluid rounded" alt="">
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Ordenar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>49k<small class="text-muted" style="font-size: 16px; line-height: 40px;"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Pizza cuatro quesos</h5>
+                            </div>
+                            <div class="p-4">
+                                <img src="img/pizza-6.jpg" class="img-fluid rounded" alt="">
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Ordenar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>19k<small class="text-muted" style="font-size: 16px; line-height: 40px;"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Pizza de tomate y albahaca
+                                </h5>
+                            </div>
+                            <div class="p-4">
+                                <img src="img/pizza-2.jpg" class="img-fluid rounded" alt="">
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Ordenar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        
+
+
+       
+        <!-- Contact Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-12">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Address</h4>
+                                        <p class="mb-0">123 North tower New York, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>E-Mail</h4>
+                                        <p class="mb-0">jjajjajj@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Telefono</h4>
+                                        <p class="mb-0">(+57) 3456 7890 123</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="rounded">
+                            <iframe class="rounded-top w-100" 
+                            style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class=" text-center p-4 rounded-bottom bg-primary">
+                            <h4 class="text-white fw-bold">Follow Us</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                      
+                      
+               
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Horario de atención</h4>
+                            <p class="text-muted mb-0">Lunes: <span class="text-white"> 09:00 am – 05:00 pm</span></p>
+                            <p class="text-muted mb-0">Sabado: <span class="text-white"> 09:00 am – 10:00 pm</span></p>
+                            <p class="text-muted mb-0">Domingo: <span class="text-white"> 09:00 am – 10:00 pm</span></p>
+                            <h4 class="my-4 text-white">Dirección</h4>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 123 ranking street North tower New York, USA</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Follow Us</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Faceboock</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Twitter</a>
+                            <h4 class="my-4 text-white">Contactos</h4>
+                            <h4 class="my-4 text-white">Dafne♡</h4>
+                            <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> Dafne@gmail.com</p>
+                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> (+57) 3456 7890 123</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                       
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Maneja el clic en los enlaces del navbar
+            $('.nav-item.nav-link').on('click', function(event) {
+                // Evita el comportamiento predeterminado de los enlaces
+                event.preventDefault();
+                
+                // Obtiene el href del enlace clicado
+                var target = $(this).attr('href');
+                
+                // Desplaza suavemente la vista hasta el elemento con el id correspondiente
+                $(target)[0].scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
